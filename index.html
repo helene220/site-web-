@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="asset/css/style.css">
+    </head>
+    
+   <body>   
+<div id="page">
+    <div class="entete">
+    <h1>Helene Bakir</h1>
+    <h2>L2 Science du langage</h2>
+    <img src="./asset/img/Charlie.jpg" width="15%"/>
+    </div>
+
+    <div id="moi" style="display:none">
+        <p><b>A propos de moi</b></p>
+        <p>Mon CV des trois dernières annees :</p>   
+    <table border="10px">
+    <thead>
+        <tr><th>Annee Universitaire</th><th>Statut</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>2025-2026</td><td>L2 Science du langage, Mineur Informatique</td></tr>
+        <tr><td>2024-2025</td><td>L1 Science du langage, Mineur Informatique</td></tr>
+        <tr><td>2023-2024</td><td>L2 LLCER Anglais</td></tr>
+    </tbody>
+</table>
+
+<p> Les 5 derniers livres que j'ai lu : </p>
+<ul>
+    <li>Inticimy<i></i> Hanif Kureishi</li>
+    <li>Blue Sister<i></i> Coco Mellors</li>
+    <li>Normal people<i></i> Sally Rooney</li>
+    <li>Intermezzo<i></i> Sally Rooney</li>
+    <li>Him<i></i> Sabrina Bowen</li>
+</ul>
+</div>
+
+    <p id="date"></p>
+    
+    <button type="button" onclick="document.getElementById('date').innerHTML = Date()">Afficher la date</button>
+    
+    <button type="button" onclick="document.getElementById('moi').style.display='block'">En savoir plus</button>
+
+    <div id="container">
+        <h1 style="text-align:center;">Analyse des <span style="color:cadetblue">données</span> dans un fichier</h1>
+    <div id="page-wrapper">
+        <div>
+            <span>
+                <label for="fileInput" class="btn"><small>Sélectionner un fichier au format .txt:</small></label>
+                    <input id="fileInput" type="file" accept=".txt">
+            </span>
+        </div>
+        <br/>
+            
+        <p style="text-align:center;">
+            <small>
+                <label for="delimID" class="mylabel">Délimiteur(s)</label> &nbsp;
+                <input type="text" value=" ,;’'~|&#@=`-.?!%*$()[]{}_:+«»§\/" name="delim" id="delimID" size="40" />
+            </small>
+                <br/>
+                    <small>
+                        <label for="poleID" class="mylabel">Pôle</label> 
+                        &nbsp;
+                        <input type="text" placeholder="entrez un pôle..." name="pole" id="poleID" size="20" />
+                    </small>
+                    &nbsp;
+                    <small>
+                        <label for="lgID" class="mylabel">Longueur</label>
+                        &nbsp;
+                        <input type="text" value="10" name="lg" id="lgID" size="10" />
+                    </small>
+                    <small>
+                        <label for="motsgrammaticauxID" class="mylabel">mots grammaticaux </label>
+                        &nbsp;
+                        <input type="text" value="de,le,la,les,à,et,des,un,une,du,que,en,d,s,se,n,ne,ce,me,sa" name="mots grammaticaux" id="motsgrammaticauxID" size="20" />
+                    </small>
+                    <br/>
+                    <br/>
+                    <button onclick="alert('bonjour');"><span>Bonjour</span></button>
+                    <br/>
+                    <br/>
+                    <button class="submit" onclick="segText()"><span>Segmentation</span></button>
+                    <button class="submit" onclick="dictionnaire()"><span>dictionnaire</span></button>
+                    <button class="submit" onclick="kujuj()">kujuj</button>
+                    <button class="submit" onclick="nbPhrase()"><span>nombres de phrases</span></button>
+                </p>
+
+                <pre id="fileDisplayArea"></pre>
+                <div id="logger3" style="color: red"></div>
+                <div id="page-analysis"></div>
+            </div>
+    </div>
+   
+<footer>
+    <p><a href="https://www.sorbonne-nouvelle.fr">Lien vers le site de la Sorbonne Nouvelle</a></p>
+</footer>
+    </div>
+    <script src="asset/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+h1 , h2 {
+    font-size: 150%
+}
+
+#page {
+    width: 100%;
+    min-height: 100vh;
+    background-color:rgb(194, 196, 173);
+    font-size: 14 px;
+    border : 3 px solid rgb(39, 150, 128)
+}
+
+.entete {
+    text-align: center
+}
+
+#moi {
+    color :rgb(13, 23, 101);
+    text-align: center;
+}
+
+#moi table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#moi p{
+    margin: 10px 0 5px 0;
+}
+
+#moi ul {
+    list-style-position: inside;
+    padding:0;
+    margin:5px auto 20px auto;
+}
+
+
+#date button {
+    position: fixed;
+    bottom: 20px;
+    }
+
+
+
+footer {
+    text-align: center;
+}
+
+
+#container {
+	background-color: rgb(180, 182, 151);
+	border: 3px solid rgb(146, 148, 123);
+	padding: 2px;
+	padding-bottom: 5%; 
+	width: 80%;
+	margin-left:10%;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+}
+
+
+
+.mylabel {
+	background-color: rgb(154, 156, 130);
+	font-family: arial,helvetica,sans-serif;
+	font-variant: small-caps;
+	font-size: 90%;
+	padding: 2px;
+	border-right: 1px solid rgb(154, 156, 130);
+	border-bottom: 1px solid rgb(154, 156, 130);
+}
+
+#fileDisplayArea {
+    max-height: 250px;
+    overflow: auto;
+    background: rgb(180, 182, 151);
+    padding: 10px;
+    white-space: pre-wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
